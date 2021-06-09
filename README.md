@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://your-solution-url.com)
+- Solution URL: (https://www.frontendmentor.io/solutions/single-price-grid-component-using-grid-KlW668FTU)
 - Live Site URL: (https://kyblue.github.io/FM-2-SinglePriceGridComponent/)
 
 ## My process
