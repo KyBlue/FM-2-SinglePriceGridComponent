@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+body {
+    background-color: hsl(204, 43%, 93%);
+}
+
+.container {
+    font-family: 'Karla', sans-serif;
+    margin: 10em auto;
+    background-color: white;
+    max-width: 750px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.1), 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "box1 box1" 
+        "box2 box3"
+}
+
+.box1 {
+    grid-area: box1;
+    padding: 25px 50px 25px 50px;
+}
+
+.box2 {
+    grid-area: box2;
+    background-color: hsl(179, 62%, 43%);
+    padding: 25px 50px 25px 50px;
+    position: relative;
+}
+
+.box3 {
+    grid-area: box3;
+    background-color: hsl(179, 50%, 53%);
+    padding: 25px 50px 25px 50px;
+}
+
+.attribution {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.75);
+    margin-left: -8px;
+    bottom: 0;
+    width: 100%;
+    height: 2rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    text-align: center;
+    padding-top: 1rem;
+    color: rgb(0, 0, 0);
+}
+
+#header2 {
+    color: hsl(71, 73%, 54%);
+}
+
+#para1{
+    color: hsl(218, 22%, 67%);
+}
+
+#para2 {
+    color: white;
+    line-height: 30px;
+}
+
+#price {
+    color: white;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+#per-month {
+    color: rgba(255, 255, 255, 0.5);
+    height: 45px;
+    padding-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#para3 {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+p {
+    line-height: 25px;
+    font-size: 16px;
+}
+
+h1 {
+    color: hsl(179, 62%, 43%);
+    font-size: 27px;
+}
+
+h2 {
+    font-size: 20px;
+    color: white;
+}
+
+.button {
+    display: block;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    right: 50px;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.1), 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    background-color: hsl(71, 73%, 54%);
+    transition: 0.3s;
+}
+
+.button a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.button:hover {
+background-color: hsl(71, 73%, 44%);
+  color: white;
+}
+
+@media screen and (max-width:500px) {
+    
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 265px auto;
+        grid-template-areas:
+            "box1" 
+            "box2"
+            "box3"
+    }
+
+    .box1 {
+        padding: 15px 30px 15px 30px;
+    }
+
+    .box2 {
+        padding: 15px 30px 15px 30px;
+    }
+
+    .box3 {
+        padding: 15px 30px 15px 30px;
+    }
+
+    .button {
+        bottom: 30px;
+        left: 30px;
+        right: 30px;
+    }
+}
